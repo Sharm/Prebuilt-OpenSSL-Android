@@ -3,10 +3,10 @@ Prebuilt shared OpenSSL 1.0.2k libraries for Android with build script. Correct 
 
 Based on https://gitlab.com/2gisqtandroid/android-qt-openssl
 
-Configured as `shared` with default options.
-Patched Makefile for remove lib version after .so
-Used NDK: android-ndk-r13b
-Used android platform: android-9
+* Configured as `shared` with default options.
+* Patched Makefile for remove lib version after .so
+* Used NDK: android-ndk-r13b
+* Used android platform: android-9
 
 
 # If you want to build it by yourself
