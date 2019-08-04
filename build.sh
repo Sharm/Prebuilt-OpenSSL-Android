@@ -39,6 +39,11 @@ for OPENSSL_SHARED in ${OPT_OPENSSL_SHARED[@]} ; do
       ARPATH="$ANDROID_NDK_ROOT/toolchains/arm-linux-androideabi-${ANDROID_NDK_TOOLCHAIN_VER}/prebuilt/$HOST_PLATFORM/bin/arm-linux-androideabi-ar"
       ANDROID_ARCH="arch-arm"
       OPENSSL_CONFIG="android-armv7" ;
+    elif [ "$TYPE" = "arm64" ] ; then
+      CCPATH="$ANDROID_NDK_ROOT/toolchains/aarch64-linux-android-${ANDROID_NDK_TOOLCHAIN_VER}/prebuilt/$HOST_PLATFORM/bin/aarch64-linux-android-gcc"
+      ARPATH="$ANDROID_NDK_ROOT/toolchains/aarch64-linux-android-${ANDROID_NDK_TOOLCHAIN_VER}/prebuilt/$HOST_PLATFORM/bin/aarch64-linux-android-ar"
+      ANDROID_ARCH="arch-arm64"
+      OPENSSL_CONFIG="android64-aarch64" ;
     elif [ "$TYPE" = "x86" ] ; then
       CCPATH="$ANDROID_NDK_ROOT/toolchains/x86-${ANDROID_NDK_TOOLCHAIN_VER}/prebuilt/$HOST_PLATFORM/bin/i686-linux-android-gcc"
       ARPATH="$ANDROID_NDK_ROOT/toolchains/x86-${ANDROID_NDK_TOOLCHAIN_VER}/prebuilt/$HOST_PLATFORM/bin/i686-linux-android-ar"

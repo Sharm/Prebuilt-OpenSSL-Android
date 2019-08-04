@@ -1,6 +1,6 @@
 #!/bin/bash
 
-OPENSSL_PACKAGE="openssl-1.0.2k.tar.gz"
+OPENSSL_PACKAGE="openssl-1.0.2s.tar.gz"
 OPENSSL_NAME=`echo $OPENSSL_PACKAGE|sed 's#\.tar.gz##g'`
 OPENSSL_URL="http://www.openssl.org/source/$OPENSSL_PACKAGE"
 OPENSSL_PREFIX="$PWD/Source" ;

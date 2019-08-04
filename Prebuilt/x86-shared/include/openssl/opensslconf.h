@@ -118,8 +118,8 @@ extern "C" {
 
 #if !(defined(VMS) || defined(__VMS)) /* VMS uses logical names instead */
 #if defined(HEADER_CRYPTLIB_H) && !defined(OPENSSLDIR)
-#define ENGINESDIR "/home/sharm/openssl-build/Prebuilt/x86-shared/lib/engines"
-#define OPENSSLDIR "/home/sharm/openssl-build/Prebuilt/x86-shared/ssl"
+#define ENGINESDIR "/home/sharm/openssl-build-2019/Prebuilt-OpenSSL-Android/Prebuilt/x86-shared/lib/engines"
+#define OPENSSLDIR "/home/sharm/openssl-build-2019/Prebuilt-OpenSSL-Android/Prebuilt/x86-shared/ssl"
 #endif
 #endif
 
